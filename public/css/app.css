@@ -32,3 +32,20 @@ section.main {
   color: #fff;
 }
 
+.btnOrder {
+  background: #82a0ac;
+  transition: all 0.4s ease-in-out;
+}
+
+.cart {
+  background: #f87171;
+}
+
+.cart .totalPrice {
+  color: #82a0ac;
+}
+
+section.login {
+  background: #f87171;
+}
+

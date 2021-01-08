@@ -30,3 +30,20 @@ section.main {
         color: $pure;
     }
 }
+.btnOrder{
+    background: $primary;
+    transition: $smooth;
+    
+}
+
+.cart{
+    background: $secondary;
+    .totalPrice{
+        color: $primary;
+    }
+}
+
+section.login {
+    background: $secondary;
+     //doing it this way because it was using full height of page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+}

@@ -1,3 +1,4 @@
+
 <section class="main py-16">
     <div class="container mx-auto flex items-center justify-between">
         <div class="w-1/2">
@@ -13,117 +14,23 @@
 <section class="menu container mx-auto py-8">
     <h1 class="text-xl font-bold mb-8">All Foods.</h1>
     <div class="grid grid-cols-4 col-gap-12 gap-y-16"> <!--MAIN CARTS-->
-        <div class="w-64">
-            <img class = "h-40 mb-8 mx-auto"src="/img/special-fried.jpg">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Special Fried</h2>
-                <span class="size py-1 px-4 rounded-full uppercase text-xs">Mild</span>
-                <div class="flex items-center justify-around mt-6">
-                    <span class="font-bold text-lg">£6.90</span>
-                    <button class="add-cart py-1 px-6 rounded-full flex items-center font-bold">
-                    <span>+</span>
-                    <span class="ml-4">Add</span>
-                </button>
+        <% foods.forEach(function(foods){ %>
+            <div class="w-64">
+                <img class = "h-40 mb-8 mx-auto"src="/img/<%= foods.image %>">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg"><%= foods.name %></h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= foods.spice %></span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">£<%= foods.price %></span>
+                        <button data-food="<%= JSON.stringify(foods) %>"class="add-cart py-1 px-6 rounded-full flex items-center font-bold">
+                        <span>+</span>
+                        <span class="ml-4">Add</span>
+                    </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="w-64">
-            <img class = "h-40 mb-8 mx-auto"src="/img/special-fried.jpg">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Special Fried</h2>
-                <span class="size py-1 px-4 rounded-full uppercase text-xs">Mild</span>
-                <div class="flex items-center justify-around mt-6">
-                    <span class="font-bold text-lg">£6.90</span>
-                    <button class="add-cart py-1 px-6 rounded-full flex items-center font-bold">
-                    <span>+</span>
-                    <span class="ml-4">Add</span>
-                </button>
-                </div>
-            </div>
-        </div><div class="w-64">
-            <img class = "h-40 mb-8 mx-auto"src="/img/special-fried.jpg">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Special Fried</h2>
-                <span class="size py-1 px-4 rounded-full uppercase text-xs">Mild</span>
-                <div class="flex items-center justify-around mt-6">
-                    <span class="font-bold text-lg">£6.90</span>
-                    <button class="add-cart py-1 px-6 rounded-full flex items-center font-bold">
-                    <span>+</span>
-                    <span class="ml-4">Add</span>
-                </button>
-                </div>
-            </div>
-        </div>
-        <div class="w-64">
-            <img class = "h-40 mb-8 mx-auto"src="/img/special-fried.jpg">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Special Fried</h2>
-                <span class="size py-1 px-4 rounded-full uppercase text-xs">Mild</span>
-                <div class="flex items-center justify-around mt-6">
-                    <span class="font-bold text-lg">£6.90</span>
-                    <button class="add-cart py-1 px-6 rounded-full flex items-center font-bold">
-                    <span>+</span>
-                    <span class="ml-4">Add</span>
-                </button>
-                </div>
-            </div>
-        </div>
-        <div class="w-64">
-            <img class = "h-40 mb-8 mx-auto"src="/img/special-fried.jpg">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Special Fried</h2>
-                <span class="size py-1 px-4 rounded-full uppercase text-xs">Mild</span>
-                <div class="flex items-center justify-around mt-6">
-                    <span class="font-bold text-lg">£6.90</span>
-                    <button class="add-cart py-1 px-6 rounded-full flex items-center font-bold">
-                    <span>+</span>
-                    <span class="ml-4">Add</span>
-                </button>
-                </div>
-            </div>
-        </div>
-        <div class="w-64">
-            <img class = "h-40 mb-8 mx-auto"src="/img/special-fried.jpg">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Special Fried</h2>
-                <span class="size py-1 px-4 rounded-full uppercase text-xs">Mild</span>
-                <div class="flex items-center justify-around mt-6">
-                    <span class="font-bold text-lg">£6.90</span>
-                    <button class="add-cart py-1 px-6 rounded-full flex items-center font-bold">
-                    <span>+</span>
-                    <span class="ml-4">Add</span>
-                </button>
-                </div>
-            </div>
-        </div>
-        <div class="w-64">
-            <img class = "h-40 mb-8 mx-auto"src="/img/special-fried.jpg">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Special Fried</h2>
-                <span class="size py-1 px-4 rounded-full uppercase text-xs">Mild</span>
-                <div class="flex items-center justify-around mt-6">
-                    <span class="font-bold text-lg">£6.90</span>
-                    <button class="add-cart py-1 px-6 rounded-full flex items-center font-bold">
-                    <span>+</span>
-                    <span class="ml-4">Add</span>
-                </button>
-                </div>
-            </div>
-        </div>
-        <div class="w-64">
-            <img class = "h-40 mb-8 mx-auto"src="/img/special-fried.jpg">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Special Fried</h2>
-                <span class="size py-1 px-4 rounded-full uppercase text-xs">Mild</span>
-                <div class="flex items-center justify-around mt-6">
-                    <span class="font-bold text-lg">£6.90</span>
-                    <button class="add-cart py-1 px-6 rounded-full flex items-center font-bold">
-                    <span>+</span>
-                    <span class="ml-4">Add</span>
-                </button>
-                </div>
-            </div>
-        </div>
+        <%}) %>
+        <script src="/js/app.js"></script>
         
     </div>
 </section>

@@ -1,4 +1,6 @@
 @import "./var";
+@import "~noty/src/noty.scss";
+@import "~noty/src/themes/mint.scss";
 
 body{
     font-family: "lato", sans-serif;
@@ -46,4 +48,9 @@ section.main {
 section.login {
     background: $secondary;
      //doing it this way because it was using full height of page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+}
+
+.noty_theme_mint {
+    border-radius: 50px !important;
+    padding-left: 8px !important;
 }

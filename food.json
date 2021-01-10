@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd736ee"
+  },
+  "name": "Speical Fried",
+  "image": "special-fried.png",
+  "price": "6.90",
+  "spice": "mild"
+},{
+  "_id": {
+    "$oid": "5eee6671a27a66807cf2bea3"
+  },
+  "name": "Spicy chicken fried",
+  "image": "Spicy-Chicken-Fried-Rice.png",
+  "price": "7.00",
+  "spice": "hot"
+},{
+  "_id": {
+    "$oid": "5eee6692a27a66807cf2bea4"
+  },
+  "name": "Spicy bowl soup",
+  "image": "Spicy-Noodle-Soup-1.jpg",
+  "price": "6.90",
+  "spice": "hot"
+},{
+  "_id": {
+    "$oid": "5eee66a5a27a66807cf2bea5"
+  },
+  "name": "egg fried",
+  "image": "special-fried.png",
+  "price": "6.90",
+  "spice": "not spicy"
+},{
+  "_id": {
+    "$oid": "5eee66c4a27a66807cf2bea6"
+  },
+  "name": "Chicken Mushroom soup",
+  "image": "Spicy-Noodle-Soup-1.jpg.png",
+  "price": "6.90",
+  "spice": "mild"
+},{
+  "_id": {
+    "$oid": "5eee66cfa27a66807cf2bea7"
+  },
+  "name": "Pineapple rice box",
+  "image": "special-fried.png",
+  "price": "6.50",
+  "spice": "mild"
+},{
+  "_id": {
+    "$oid": "5eee66eea27a66807cf2bea8"
+  },
+  "name": "bangkok hot box",
+  "image": "noodle.png",
+  "price": "6.50",
+  "spice": "hot"
+},{ 
+  "_id": {
+    "$oid": "5eee6717a27a66807cf2bea9"
+  },
+  "name": "Thai street",
+  "image": "noodle.png",
+  "price": "6.50",
+  "spice": "medium"
+}]

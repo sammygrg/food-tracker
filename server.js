@@ -9,6 +9,7 @@ const mongoose = require("mongoose")
 const session = require("express-session")
 const flash = require("express-flash")
 const DatabaseStore = require("connect-mongo")(session)
+const passport = require("passport")
 
 
 
@@ -45,16 +46,24 @@ project.use(session({
     
 }))
 
+//passport config
+const passportInit = require("./app/config/passport")
+passportInit(passport)
+project.use(passport.initialize())
+project.use(passport.session())
+
 
 project.use(flash())
 
 //Assets for web
 project.use(express.static("public"))// defining where to get assets from.
+project.use(express.urlencoded({ extended : false})) // so that it can real url encoded data.
 project.use(express.json())
 
 //Global middleware
 project.use((req, res, next) => {
     res.locals.session = req.session
+    res.locals.user = req.user
     next()
 
 })

@@ -22,6 +22,9 @@ function orderController (){
             order.save().then(result => {
                 req.flash("sucess", "your order has been placed")
                 delete req.session.cart
+                // emit
+                const eventEmitter = req.app.get('eventEmitter')
+                eventEmitter.emit('orderPlaced',result ) // now server can use it 
                 return res.redirect('/customer/orders')
                 
             }).catch(err => {
@@ -33,6 +36,17 @@ function orderController (){
             const orders = await Order.find({customerId: req.user._id}, null,{sort:{"createdAt": -1}}) // orders sorted by newest
             res.render("customers/orders", {orders: orders, moment: moment})
           
+        },
+        async Show(req, res){
+            const order = await Order.findById(req.params.id)
+            // authorise users.
+
+            if(req.user._id.toString() === order.customerId.toString()){
+                res.render("customers/singleOrder", { order:order})
+            } else {
+                res.redirect("/")
+            }
+
         }
     }
 }
